@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer P Shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,30 h35 c15,0 25,10 25,22 s-10,22 -25,22 h-15 v12 h-20 z M50,45 v14 h15 c5,0 8,-3 8,-7 s-3,-7 -8,-7 z" />
+
+    <!-- Folder Detail -->
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M52,62 h22 l-4,10 h-22 z" />
+    <path
+        android:fillColor="#357ABD"
+        android:pathData="M55,68 h22 l-4,10 h-22 z" />
+
+</vector>

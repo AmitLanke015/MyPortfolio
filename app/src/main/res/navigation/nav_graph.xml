@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.sunbeam.myportfolio.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_about"
+            app:destination="@id/navigation_about"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.sunbeam.myportfolio.fragments.AboutFragment"
+        android:label="About Me"
+        tools:layout="@layout/fragment_about">
+        <action
+            android:id="@+id/action_about_to_certificates"
+            app:destination="@id/navigation_certificates"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_skills"
+        android:name="com.sunbeam.myportfolio.fragments.SkillsFragment"
+        android:label="Skills"
+        tools:layout="@layout/fragment_skills" />
+
+    <fragment
+        android:id="@+id/navigation_projects"
+        android:name="com.sunbeam.myportfolio.fragments.ProjectsFragment"
+        android:label="Projects"
+        tools:layout="@layout/fragment_projects" />
+
+    <fragment
+        android:id="@+id/navigation_certificates"
+        android:name="com.sunbeam.myportfolio.fragments.CertificatesFragment"
+        android:label="Certificates"
+        tools:layout="@layout/fragment_certificates" />
+
+    <fragment
+        android:id="@+id/navigation_experience"
+        android:name="com.sunbeam.myportfolio.fragments.ExperienceFragment"
+        android:label="Experience"
+        tools:layout="@layout/fragment_experience" />
+
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="com.sunbeam.myportfolio.fragments.ContactFragment"
+        android:label="Contact"
+        tools:layout="@layout/fragment_contact" />
+
+</navigation>
